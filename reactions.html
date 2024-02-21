@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リアクション画面</title>
+    <link rel="stylesheet" href="style.css"> <!-- あとでスタイルを定義 -->
+</head>
+<body>
+
+<div class="reaction-container">
+    <h2>リアクションを付ける</h2>
+    <!-- 投稿内容の表示エリア（サンプル） -->
+    <div class="post-content">
+        <p>ここに投稿内容が表示されます。</p>
+    </div>
+    <!-- リアクションフォーム -->
+    <form id="reactionForm">
+        <label for="reaction">リアクション:</label>
+        <select name="reaction" id="reaction">
+            <option value="like">いいね！</option>
+            <option value="love">大好き！</option>
+            <option value="happy">嬉しい！</option>
+            <option value="surprised">驚いた！</option>
+            <option value="sad">悲しい</option>
+        </select>
+        <button type="submit">投稿</button>
+    </form>
+    <button id="backToPostsList">投稿一覧に戻る</button>
+</div>
+
+<script src="reactions.js"></script> <!-- JavaScriptファイルのパス -->
+</body>
+</html>
+
+
+<button class="button-blue" onclick="location.href='posts-list.html'">投稿一覧に戻る</button>
+<button class="button-blue" onclick="submitPost()">投稿</button>
+
+
+
+<link rel="stylesheet" href="reactions.css">
